@@ -71,7 +71,7 @@ export default function MainSection(props) {
           </motion.h2>
           <textarea
             rows="10"
-            cols="40"
+            cols="30"
             className="p-[0.5rem] m-[2rem]"
             value={text}
             onChange={Change}
