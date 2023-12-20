@@ -4,10 +4,12 @@ import { faPenNib } from '@fortawesome/free-solid-svg-icons'
 export default function Navbar() {
   return (
     <header>
-      <nav>
-        <span className="Logo">
-        <FontAwesomeIcon icon={faPenNib} />
-        </span>
+      <nav className='flex backdrop-blur items-center justify-center'>
+        
+        <FontAwesomeIcon icon={faPenNib} className='sm:text-[3rem] text-[2rem]'/>
+        <h1 className='mx-[1rem] my-[0.5rem] sm:text-[3rem] text-[2rem]'>TypeTweakery</h1>
+        <FontAwesomeIcon icon={faPenNib} className='sm:text-[3rem] text-[2rem]'/>
+        
       </nav>
     </header>
   )
