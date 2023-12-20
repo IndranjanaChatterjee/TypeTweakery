@@ -60,7 +60,7 @@ export default function MainSection(props) {
   return (
     <>
       <div className="outer flex w-screen  flex-col sm:flex-row ">
-        <div className="h-[80%] flex justify-center items-center flex-col  second  w-[100%] h-[65vh] sm:w-[70%] sm:h-[84vh] bg-[url('./assets/notes.jpg')] bg-no-repeat bg-center bg-cover">
+        <div className=" flex justify-center items-center flex-col  second  w-[100%] h-[65vh] sm:w-[70%] sm:h-[89vh] bg-[url('./assets/notes.jpg')] bg-no-repeat bg-center bg-cover">
           <motion.h2
             className="text-[2rem] text-[#0e1428]"
             initial={{ opacity: 0 }}
