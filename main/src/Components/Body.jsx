@@ -53,18 +53,17 @@ export default function MainSection(props) {
     setText(newtext);
   };
   const Copy = () => {
-    setCopyText(true);
-    navigator.clipboard.writeText(setText);
+    
   };
 
   return (
     <>
       <div className="outer flex w-screen  flex-col sm:flex-row ">
-        <div className=" flex justify-center items-center flex-col  second  w-[100%] h-[62vh] sm:w-[70%] sm:h-[88vh] bg-[url('./assets/notes.jpg')] bg-no-repeat bg-center bg-cover">
+        <div className=" flex justify-center items-center flex-col  second  w-[100%] h-[61vh] sm:w-[70%] sm:h-[88vh] bg-[url('./assets/notes.jpg')] bg-no-repeat bg-center bg-cover">
           <motion.h2
             className="text-[2rem] text-[#0e1428]"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1,scale:1.2 }}
+            animate={{ opacity: 1, scale: 1.2 }}
             transition={{ duration: 2 }}
           >
             Enter your text here:
@@ -76,7 +75,14 @@ export default function MainSection(props) {
             value={text}
             onChange={Change}
           ></textarea>
-          <CopyToClipboard text={text} onCopy={() => setCopyText(true)}>
+          <CopyToClipboard
+            text={text}
+            onCopy={() => 
+              setCopyText(true)
+              
+            }
+            
+          >
             <button>
               {copytext ? (
                 <FontAwesomeIcon
@@ -97,7 +103,7 @@ export default function MainSection(props) {
             className="one text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer  hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]hover:font-black"
             onClick={UpCase}
             initial={{ x: 300 }}
-            animate={{  x: 0 }}
+            animate={{ x: 0 }}
             transition={{
               delay: 0.1,
               duration: 0.5,
@@ -111,7 +117,7 @@ export default function MainSection(props) {
             className="two text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]hover:font-black"
             onClick={LowCase}
             initial={{ x: 500 }}
-            animate={{  x: 0 }}
+            animate={{ x: 0 }}
             transition={{
               delay: 0.5,
               duration: 1,
@@ -125,7 +131,7 @@ export default function MainSection(props) {
             className="thee text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]hover:font-black"
             onClick={CapCase}
             initial={{ x: 700 }}
-            animate={{  x: 0 }}
+            animate={{ x: 0 }}
             transition={{
               delay: 1,
               duration: 1,
@@ -139,7 +145,7 @@ export default function MainSection(props) {
             className="four text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]"
             onClick={RemoveSpace}
             initial={{ x: 900 }}
-            animate={{  x: 0 }}
+            animate={{ x: 0 }}
             transition={{
               delay: 1.2,
               duration: 1,
