@@ -92,7 +92,7 @@ export default function MainSection(props) {
             </button>
           </CopyToClipboard>
         </div>
-        <div className="flex flex-row sm:flex-col justify-center items-center w-[100%] gap-[0.4rem] sm:gap-6 flex-wrap first  w-[100%] h-[24.5vh] sm:w-[30%] sm:h-[84vh] flex justify-center items-center bg-[#0e1428] ">
+        <div className="flex flex-row sm:flex-col justify-center items-center w-[100%] gap-[0.4rem] sm:gap-6 flex-wrap first  w-[100%] h-[24.5vh] sm:w-[30%] sm:h-[84vh]  bg-[#0e1428] ">
           <motion.button
             className="one text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer  hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]hover:font-black"
             onClick={UpCase}

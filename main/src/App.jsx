@@ -1,7 +1,7 @@
 import React,{ useState } from "react";
 
 import "./App.css";
-import MainSection from "./Components/body";
+import MainSection from "./Components/Body";
 import Navbar from "./Components/Navbar";
 import Button from "./Components/Button";
 
