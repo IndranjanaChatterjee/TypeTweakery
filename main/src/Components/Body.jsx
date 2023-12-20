@@ -61,7 +61,14 @@ export default function MainSection(props) {
     <>
       <div className="outer flex w-screen  flex-col sm:flex-row ">
         <div className="h-[80%] flex justify-center items-center flex-col  second  w-[100%] h-[65vh] sm:w-[70%] sm:h-[84vh] bg-[url('./assets/notes.jpg')] bg-no-repeat bg-center bg-cover">
-          <h2 className="text-[2rem] text-[#0e1428]">Enter your text here:</h2>
+          <motion.h2
+            className="text-[2rem] text-[#0e1428]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1,scale:1.2 }}
+            transition={{ duration: 2 }}
+          >
+            Enter your text here:
+          </motion.h2>
           <textarea
             rows="10"
             cols="40"
@@ -89,36 +96,56 @@ export default function MainSection(props) {
           <motion.button
             className="one text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer  hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]hover:font-black"
             onClick={UpCase}
-            initial={{x:300}}
-            animate={{ scale:1.2,x:0 }}
-            transition={{delay:0.1 ,duration:0.5,type:"tween",ease:"linear"}}
+            initial={{ x: 300 }}
+            animate={{  x: 0 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+              type: "tween",
+              ease: "linear",
+            }}
           >
             Upper Case
           </motion.button>
           <motion.button
             className="two text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]hover:font-black"
             onClick={LowCase}
-            initial={{x:500}}
-            animate={{ scale:1.2,x:0 }}
-            transition={{delay:0.5 ,duration:1,type:"tween",ease:"linear"}}
+            initial={{ x: 500 }}
+            animate={{  x: 0 }}
+            transition={{
+              delay: 0.5,
+              duration: 1,
+              type: "tween",
+              ease: "linear",
+            }}
           >
             Lower Case
           </motion.button>
           <motion.button
             className="thee text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]hover:font-black"
             onClick={CapCase}
-            initial={{x:700}}
-            animate={{ scale:1.2,x:0 }}
-            transition={{delay:1 ,duration:1,type:"tween",ease:"linear"}}
+            initial={{ x: 700 }}
+            animate={{  x: 0 }}
+            transition={{
+              delay: 1,
+              duration: 1,
+              type: "tween",
+              ease: "linear",
+            }}
           >
             Capitalize
           </motion.button>
           <motion.button
             className="four text-[#F18805] text-lg p-2 border-2 border-solid border-[#F18805]  w-[10rem] text-center hover:cursor-pointer hover:font-bold hover:text-[#0e1428] hover:bg-[#F18805] hover:rounded-2xl transition-all ease-in-out duration-[0.3s]"
             onClick={RemoveSpace}
-            initial={{x:900}}
-            animate={{ scale:1.2,x:0 }}
-            transition={{delay:1.2 ,duration:1,type:"tween",ease:"linear"}}
+            initial={{ x: 900 }}
+            animate={{  x: 0 }}
+            transition={{
+              delay: 1.2,
+              duration: 1,
+              type: "tween",
+              ease: "linear",
+            }}
           >
             Remove spaces
           </motion.button>

@@ -13,7 +13,8 @@ export default function Navbar() {
         <motion.h1
           className="mx-[1rem] my-[0.5rem] sm:text-[3rem] text-[2rem] text-[#F18805]"
           initial={{opacity:0}}
-          animate={{ opacity:1 }}
+          animate={{ opacity:1,scale:1.2 }}
+          transition={{duration:2}}
         >
           TypeTweakery
         </motion.h1>
