@@ -15,7 +15,7 @@ function App() {
           <Navbar />
           <MainSection />
         </div>
-        <div className="first bg-sky-500 w-[100%] h-[30vh] sm:w-[30%] sm:h-[100vh] flex justify-center items-center bg-[#0E1428]">
+        <div className="first bg-sky-500 w-[100%] h-[30vh] sm:w-[30%] sm:h-[100vh] flex justify-center items-center bg-[#0e1428]">
           <Button />
         </div>
       </div>
